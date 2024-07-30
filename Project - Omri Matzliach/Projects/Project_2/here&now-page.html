@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/978b13f561.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Style/style.css">
+    <title>Here & Now-page</title>
+    <style>
+        #hero > div > a{
+            position: relative;
+            display: inline-block;
+            background-color: #ffa48f;
+            width: 220px;
+            padding: 12px;
+            margin: 0 10px;
+            border: 0.5px solid black;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 900;
+            color: black;
+        }
+        #hero > p{
+        margin-top: 0;
+        }
+        #preview{
+        background-color: #FFF5EE;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 140px 0;
+        }
+        .icon{
+        font-size: 25px;
+        }
+        #preview > img{
+            box-shadow: 0px 0px 40px #00000066;
+        }
+        
+        /* media query */
+
+        @media screen and (max-width:1280px){
+            #hero > div > a{
+                width: 120px;
+                font-size: 12px;
+                padding: 5px;
+            }
+            .icon{
+                font-size: 12px;
+            }
+            #preview{
+                padding: 85px;
+            }
+            #preview > img{
+                width: 500px;
+            }
+        }
+
+        @media screen and (max-width:767px){
+            #preview{
+                padding: 140px 30px;
+            }
+            #preview > img{
+                width: 300px;
+            }
+            #hero > div > a{
+                margin: 10px;
+            }
+            #hero > p{
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+        <!-- Navbar + Header -->
+
+        <nav>
+
+            <input type="checkbox" id="hamburger-toggle">
+            <label for="hamburger-toggle" id="hamburger-icon">&#9776;</label>
+    
+            <div class="right-nav">
+                <a href="#hero" class="active">ראשי</a>
+                <a href="#preview">דף נחיתה</a>
+                <a href="#social">סושיאל</a>
+            </div>
+            <div class="left-nav">
+                <p>Omri Matzliach</p>
+                <img src="/Images/profilepic-logo.jpeg" alt="profile picture">
+            </div>
+    
+        </nav>
+    
+        <!-- Hero Section -->
+    
+        <section id="hero">
+            <div class="bg-color"></div>
+            <h1>כאן ועכשיו</h1>
+            <p><strong>דף נחיתה בולט וצבעוני</strong> <br> הדף מאפשר ללקוח להזין את פרטיו בכדי לזכות בשלל מתנות ומאפשר לחברה גישה לפרטי הלקוח! <br> הדף מכיל טופס למילוי פרטים והודעת אישור.</p>
+            <div>
+                <a href="/Projects/Project_2/here&now.html"> לצפייה בדף &nbsp; <i class=" icon fa-brands fa-github"></i> </a>
+                <a href="/Projects/Project_2/here&now.html" download="/Projects/Project_2/here&now.html">להורדת הפרוייקט &nbsp; <i class=" icon fa-solid fa-file-arrow-down"></i> </a>
+            </div>
+        </section>
+    
+        <!-- Logo's Section -->
+        
+        <div class="logos-section">
+            <img src="/Images/img-HTML@2x.png" alt="image of html logo">
+            <img src="/Images/img-CSS@2x.png" alt="image of css logo">
+            <img src="/Images/img-JS@2x.png" alt="image of javascript logo">
+        </div>
+
+        <section id="preview">
+            <img src="/Images/preview2.png" alt="image of the project">
+        </section>
+
+
+            <!-- Footer Section -->
+
+        <footer id="social">
+            <div class="footer-icons">
+
+            <a href="#" class="footer-logos"><i class="fa-solid fa-map-pin"></i> <p>אבנון 28, אילת.</p></a>
+            <a href="#" class="footer-logos"><i class="fa-solid fa-at"></i> <p>Omrim30@gmail.com</p></a>
+            <a href="#" class="footer-logos"><i class="fa-brands fa-whatsapp"></i> <p>0504441779</p></a>
+            <a href="#" class="footer-logos"><i class="fa-solid fa-phone"></i> <p class="second-font">0504441779</p></a>
+            <a href="#" class="footer-logos"><i class="fa-brands fa-linkedin-in"></i> <p>עמרי מצליח</p></a>
+            <a href="#" class="footer-logos"><i class="fa-brands fa-facebook-f"></i> <p class="second-font">#Omri Matzliach</p></a>
+            </div>
+
+            <div class="footer-rights"><p>Omri Matzliach</p> <p style="font-weight: 300;">כל הזכויות שמורות ©</p></div>
+        </footer>
+    
+</body>
+</html>

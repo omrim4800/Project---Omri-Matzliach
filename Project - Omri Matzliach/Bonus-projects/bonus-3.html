@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/978b13f561.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/Style/bonus3-style.css">
+    <title>Login form</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <form id="myForm">
+            <h1>התחברות</h1>
+            <div class="input-box">
+                <input type="text" placeholder="שם משתמש" required>
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="סיסמא" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label for=""><input type="checkbox">זכור אותי</label>
+                <a href="#">שכחת סיסמא?</a>
+            </div>
+
+            <button type="submit" class="btn">התחברות</button>
+
+            <div class="register-link">
+                <p>אין לך חשבון? <br> <a href="#">הירשם</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('myForm');
+    
+            form.addEventListener('submit', (event) => {
+                event.preventDefault(); 
+    
+                alert('ניצור איתך קשר בקרוב!');
+                
+                form.reset();
+            });
+        });
+    </script>
+
+    
+</body>
+</html>
